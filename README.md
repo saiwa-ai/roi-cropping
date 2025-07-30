@@ -40,7 +40,7 @@
 <h2>📥 Installation</h2>
 
 <h3>1. Clone the Repository</h3>
-<pre><code>git clone https://github.com/saiwa-admin/roi-cropping.git
+<pre><code>git clone https://github.com/saiwa-ai/roi-cropping.git
 cd roi-cropping</code></pre>
 
 <h3>2. Create Virtual Environment (Recommended)</h3>
