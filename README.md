@@ -104,6 +104,8 @@ source roi-cropping-env/bin/activate</code></pre>
 
 <h2>📄 Parameter Description</h2>
 
+<p><strong>🔔 Note:</strong> The <code>input_annotation_path</code> must point to an annotation file in <strong>COCO format</strong>.</p>
+
 <table border="1" cellpadding="6" cellspacing="0">
   <thead>
     <tr>
