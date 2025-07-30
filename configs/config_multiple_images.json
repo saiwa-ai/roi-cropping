@@ -1,0 +1,10 @@
+{
+    "input_annotation_path":"/path/to/input-annotation.json",
+    "output_annotation_path":"/path/to/output-annotation.json",
+    "images_dir":"/path/to/images-dir",
+    "tile_size":[1280, 1280],
+    "stride":[640, 640],
+    "polygon_visibility_threshold":0.8,
+    "output_dir":"/path/to/output",
+    "draw_annotations": true
+}
