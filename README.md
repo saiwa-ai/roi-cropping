@@ -1,4 +1,20 @@
-<h2> Efficient Image Tiling for Annotated Datasets</h2>
+<h1>🔍 Overview</h1>
+<p>This repository provides an <b>efficient image tiling solution</b> for annotated datasets, designed to speed up training and reduce computation costs—especially for large images with sparse annotations. It supports:
+    <ul>
+        <li><b>Tiling large images</b> into smaller segments using configurable size and stride
+        </li>
+        <li><b>Annotation clustering</b> to correctly map polygons to their respective tiles
+        </li>
+        <li><b>Polygon visibility filtering</b> via a customizable visibility threshold
+        </li>
+        <li><b>Optimal tile selection</b> to maximize annotation coverage with minimal tiles</li>
+        <li><b>Single or batch processing</b> through easy-to-use JSON configs
+        </li>
+    </ul>
+</p>
+
+
+<h1> Efficient Image Tiling for Annotated Datasets</h1>
 
 <p>In some of our projects, we faced a recurring problem: we had large images that sometimes contained only a few annotations. When we trained these images using a model—especially a segmentation model—it took a long time and consumed a significant amount of computational units on Google Colab. To optimize the process, we decided to divide the large images into smaller tiles and select only the ones that contained annotations. Our goal was to split a large image into the minimum number of tiles while ensuring that all annotations were included. This document explains our solution to this problem.</p>
 
@@ -17,7 +33,7 @@
 
 
 <p align="center">
-<img src="data/efficient-tiling.gif" alt="image_tiling of GIF">
+<img src="resources/efficient-tiling.gif" alt="image_tiling of GIF">
 </p>
 
 <h3>2- Cluster the annotations according to the tiles they belong to.</h3>
@@ -34,7 +50,7 @@
 <p>In the final step, I iteratively select tiles based on the number of new (previously unselected) annotations they contain. During each loop, I choose the tile that has the highest count of new annotations. After selecting a tile, I remove it from the pool and repeat the process with the remaining tiles, always prioritizing the tile with the most new annotations in each round. This helps maximize annotation coverage efficiently.</p>
 
 <p align="center">
-<img src="data/choosing_optimal_tiles.gif" alt="document_data/choosing_optimal_tiles.gif">
+<img src="resources/choosing_optimal_tiles.gif" alt="document_data/choosing_optimal_tiles.gif">
 </p>
 
 <h2>📥 Installation</h2>
@@ -153,7 +169,7 @@ source roi-cropping-env/bin/activate</code></pre>
     <tr>
       <td><code>draw_annotations</code></td>
       <td>bool</td>
-      <td>Whether to draw annotations on saved output tiles</td>
+      <td>If true, saves tiled images with either bounding box or polygon annotations (whichever applies) drawn on them in a dedicated folder inside the output directory for visual verification.</td>
     </tr>
   </tbody>
 </table>
