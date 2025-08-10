@@ -1,14 +1,14 @@
 <h1>🔍 Overview</h1>
 <p>This repository provides an <b>efficient image tiling solution</b> for annotated datasets, designed to speed up training and reduce computation costs especially for large images with sparse annotations. It supports:
     <ul>
-        <li><b>Tiling large images</b> into smaller segments using configurable size and stride
+        <li>Tiling large images into smaller segments using configurable size and stride
         </li>
-        <li><b>Annotation clustering</b> to correctly map polygons to their respective tiles
+        <li>Annotation clustering to correctly map polygons to their respective tiles
         </li>
-        <li><b>Polygon visibility filtering</b> via a customizable visibility threshold
+        <li>Polygon visibility filtering via a customizable visibility threshold
         </li>
-        <li><b>Optimal tile selection</b> to maximize annotation coverage with minimal tiles</li>
-        <li><b>Single or batch processing</b> through easy-to-use JSON configs
+        <li>Optimal tile selection to maximize annotation coverage with minimal tiles</li>
+        <li>Single or batch processing through easy-to-use JSON configs
         </li>
     </ul>
 </p>
