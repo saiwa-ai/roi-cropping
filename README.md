@@ -1,5 +1,5 @@
 <h1>🔍 Overview</h1>
-<p>This repository provides an <b>efficient image tiling solution</b> for annotated datasets, designed to speed up training and reduce computation costs—especially for large images with sparse annotations. It supports:
+<p>This repository provides an <b>efficient image tiling solution</b> for annotated datasets, designed to speed up training and reduce computation costs especially for large images with sparse annotations. It supports:
     <ul>
         <li><b>Tiling large images</b> into smaller segments using configurable size and stride
         </li>
