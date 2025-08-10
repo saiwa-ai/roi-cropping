@@ -85,14 +85,12 @@ source roi-cropping-env/bin/activate</code></pre>
 
 <p><strong>Example config_multiple.json</strong></p>
 <pre><code>{
-  "input_annotation_path": "/path/to/input/test.json",
-  "output_annotation_path": "/path/to/output/test.json",
-  "images_dir": "/path/to/input/images",
+  "input_annotation_path": "/path/to/input-annotation.json",
+  "images_dir": "/path/to/images_dir",
   "tile_size": [1280, 1280],
   "stride": [640, 640],
-  "polygon_visibility_threshold": 0.9,
-  "output_dir": "/path/to/output/images",
-  "draw_annotations": false
+  "polygon_visibility_threshold": 0.8,
+  "output_dir": "/path/to/output/"
 }</code></pre>
 
 <hr>
@@ -106,14 +104,12 @@ source roi-cropping-env/bin/activate</code></pre>
 
 <p><strong>Example config_single.json</strong></p>
 <pre><code>{
-  "input_annotation_path": "data/input/annotations/test.json",
-  "output_annotation_path": "data/output/updated_test.json",
-  "image_path": "data/input/images/UASs_18.jpg",
+  "input_annotation_path": "/path/to/input-annotation.json",
+  "image_path": "/path/to/image",
   "tile_size": [1280, 1280],
   "stride": [640, 640],
   "polygon_visibility_threshold": 0.8,
-  "output_dir": "data/output/UASs_276_test",
-  "draw_annotations": true
+  "output_dir": "/path/to/output/"
 }</code></pre>
 
 <hr>
