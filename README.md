@@ -137,11 +137,6 @@ source roi-cropping-env/bin/activate</code></pre>
       <td>Path to the input annotation JSON file (COCO format)</td>
     </tr>
     <tr>
-      <td><code>output_annotation_path</code></td>
-      <td>str</td>
-      <td>Path to write the updated annotation JSON</td>
-    </tr>
-    <tr>
       <td><code>images_dir</code> / <code>image_path</code></td>
       <td>str</td>
       <td>Directory of images (for multiple) or single image path</td>
@@ -165,11 +160,6 @@ source roi-cropping-env/bin/activate</code></pre>
       <td><code>output_dir</code></td>
       <td>str</td>
       <td>Directory where the output (images and annotations) will be saved</td>
-    </tr>
-    <tr>
-      <td><code>draw_annotations</code></td>
-      <td>bool</td>
-      <td>If true, saves tiled images with either bounding box or polygon annotations (whichever applies) drawn on them in a dedicated folder inside the output directory for visual verification.</td>
     </tr>
   </tbody>
 </table>

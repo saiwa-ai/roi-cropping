@@ -23,4 +23,4 @@ if __name__ == "__main__":
     
     result = app_single_image.handler(config, "")
 
-    print(json.dumps(result, indent=1))
+    print(json.dumps(result, indent=4))
