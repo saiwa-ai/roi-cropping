@@ -53,6 +53,12 @@
 <img src="resources/choosing_optimal_tiles.gif" alt="document_data/choosing_optimal_tiles.gif">
 </p>
 
+<h2>🔬 Algorithm Summary Visualization</h2>
+<p>The algorithm efficiently tiles large images into the fewest possible tiles based on user-specified sizes while preserving all annotations. In this image below, a <b>5472×3648</b> image was divided into two <b>1280×1280</b> tiles, fully covering all bounding box annotations:</p>
+<p align="center">
+<img src="resources/algorithm_summary_visualization.gif" alt="algorithm_summary_visualization.gif">
+</p>
+
 <h2>📥 Installation</h2>
 
 <h3>1. Clone the Repository</h3>
