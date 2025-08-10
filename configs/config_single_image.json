@@ -1,8 +1,8 @@
 {
-    "input_annotation_path":"test_data/annotations/test_0.json",
-    "image_path":"test_data/images/test_0.jpg",
-    "tile_size":[1280, 1280],
-    "stride":[640, 640],
-    "polygon_visibility_threshold":0.8,
-    "output_dir":"./output"
+  "input_annotation_path": "/path/to/input-annotation.json",
+  "image_path": "/path/to/image",
+  "tile_size": [1280, 1280],
+  "stride": [640, 640],
+  "polygon_visibility_threshold": 0.8,
+  "output_dir": "/path/to/output/"
 }

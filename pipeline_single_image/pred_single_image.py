@@ -23,9 +23,11 @@ def run(arguments):
         polygon_visibility_threshold=arguments['polygon_visibility_threshold']
         
         output_dir=arguments['output_dir']
-        os.makedirs(output_dir, exist_ok=True)
+        os.makedirs(f"{output_dir}/tiles", exist_ok=True)
+        os.makedirs(f"{output_dir}/annotations", exist_ok=True)
 
-        output_annotation_path = os.path.join(output_dir, 
+        output_annotation_path = os.path.join(output_dir,
+                                              "annotations", 
                                               f"output_{os.path.basename(input_annotation_path)}")
 
         file_name = os.path.basename(image_path)
@@ -59,7 +61,7 @@ def run(arguments):
                                   entry=results,
                                   file_name=file_name)
         
-        save_results(output_dir=output_dir,
+        save_results(output_dir=f"{output_dir}/tiles",
                     entry=results,
                     file_name=file_name)
         
