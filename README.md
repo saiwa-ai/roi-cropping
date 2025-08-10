@@ -13,6 +13,7 @@
     </ul>
 </p>
 
+<p>Additionally, we provide ready-to-use code to run this solution directly in <a href="roi_cropping.ipynb">Google Colab</a> for easy experimentation and use in the cloud.</p>
 
 <h1> Efficient Image Tiling for Annotated Datasets</h1>
 
